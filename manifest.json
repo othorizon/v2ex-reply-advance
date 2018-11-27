@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "v2ex-reply-advance",
-    "version": "1.0.0",
+    "version": "0.1",
     "description": "v2ex 回复增强",
     "icons":
     {
