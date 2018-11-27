@@ -1,0 +1,34 @@
+{
+    "manifest_version": 2,
+    "name": "v2ex-reply-advance",
+    "version": "1.0.0",
+    "description": "v2ex 回复增强",
+    "icons":
+    {
+        "16": "icon-de.png",
+        "48": "icon-de.png",
+        "128": "icon-de.png"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "page_action": 
+    {
+        "default_icon": "icon-ac.png",
+        "default_title": "v2ex 回复增强"
+    },
+    "permissions" : [
+        "declarativeContent"
+    ],
+    "web_accessible_resources": ["inject.js"],
+    "content_scripts": 
+    [
+        {
+            "matches": ["https://www.v2ex.com/t/*"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "homepage_url": "https://rizon.top"
+}
